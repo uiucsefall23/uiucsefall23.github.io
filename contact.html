@@ -1,33 +1,71 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-M0ncu1AEtF/NwFkLBtZ/40v2NF/cD3Ad8T2y/WpsLX7R3cA66k5ysFxlG0r6M2MY9wt3QVUh/dOe0ATRNp5pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-M0ncu1AEtF/NwFkLBtZ/40v2NF/cD3Ad8T2y/WpsLX7R3cA66k5ysFxlG0r6M2MY9wt3QVUh/dOe0ATRNp5pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
   <link href="css/team_style.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <img src="img/logo.png" height="50px" width="50px" alt="uiu cse fall 23">
-            <span class="ml-3 text-xl">UIU CSE Fall 23</span>
-          </a>
-          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a class="mr-5 hover:text-gray-900">First Link</a>
-            <a class="mr-5 hover:text-gray-900">Second Link</a>
-            <a class="mr-5 hover:text-gray-900">Third Link</a>
-            <a class="mr-5 hover:text-gray-900">Fourth Link</a>
-          </nav>
-          <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
+  <!-- Navbar -->
+  <nav class="bg-gray-800 text-white">
+    <div class="container mx-auto px-4 py-6">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="/" class="text-xl font-bold">
+          Logo
+        </a>
+
+        <!-- Mobile menu button -->
+        <div class="lg:hidden">
+          <button class="text-white focus:outline-none" id="mobileMenuButton">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
           </button>
         </div>
-      </header>
+
+        <!-- Desktop menu -->
+        <ul class="hidden lg:flex space-x-4">
+          <li>
+            <a href="#" class="text-white">Home</a>
+          </li>
+          <li>
+            <a href="#" class="text-white">About</a>
+          </li>
+          <li>
+            <a href="#" class="text-white">Services</a>
+          </li>
+          <li>
+            <a href="#" class="text-white">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mobile menu (hidden on larger screens) -->
+      <div class="lg:hidden" id="mobileMenu">
+        <ul class="mt-4 space-y-4">
+          <li>
+            <a href="#" class="block text-white">Home</a>
+          </li>
+          <li>
+            <a href="#" class="block text-white">About</a>
+          </li>
+          <li>
+            <a href="#" class="block text-white">Services</a>
+          </li>
+          <li>
+            <a href="#" class="block text-white">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Your content goes here -->
        <!-- Team #2 Start -->
        <div class="container5">
         <div class="section-title5">
@@ -46,7 +84,7 @@
                     <div class="team-content">
                         <h2>Anik Bhowmik</h2>
                         <h3>UIU ID : 0112330035</h3>
-                        <p>Phone : +88001778-229006</p>
+                        <p>Phone : +8801778-229006</p>
                         <h4>abhowmik2330035@bscse<br>.uiu.ac.bd</h4>
                     </div>
                 </div>
@@ -63,7 +101,7 @@
                     <div class="team-content">
                         <h2>Tanjimur Rahman Arpon</h2>
                         <h3>UIU ID : 0112330038</h3>
-                        <p>Phone : +88001580-401289</p>
+                        <p>Phone : +8801580-401289</p>
                         <h4>tarpon2330038@bscse<br>.uiu.ac.bd</h4>
                     </div>
                 </div>
@@ -72,6 +110,10 @@
               <div class="team-2">
                   <div class="team-img">
                       <img src="img/profile_image/team_3.png" alt="Team Image">
+                      <div class="team-social">
+                        <a class="social-fb" href="https://www.facebook.com/somrat.alom.12"><i class="fab fa-facebook-f"></i></a>
+                      
+                    </div>
                   </div>
                   <div class="team-content">
                       <h2>Shahariar Alom Somrat</h2>
@@ -84,7 +126,7 @@
           <div class="column5">
             <div class="team-2">
                 <div class="team-img">
-                    <img src="img/profile_image/avatar_1.png" alt="Team Image">
+                    <img src="img/profile_image/team_4.png" alt="Team Image">
                     <div class="team-social">
                         <a class="social-fb" href="https://www.facebook.com/samiurrahman.sameer.5?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
                         <a class="social-in" href="https://instagram.com/_sameerrr_35?igshid=MzNlNGNkZWQ4Mg=="><i class="fab fa-instagram"></i></a>
@@ -119,13 +161,14 @@
                       <h2>Sabiha islam jisamoni</h2>
                       <h3>UIU ID : 0112330084</h3>
                       <p>Phone : +8801610-214141</p>
+                      <h4>sjisamoni2330084@bscse<br>.uiu.ac.bd</h4>
                     </div>
                 </div>
             </div>
             <div class="column5">
                 <div class="team-2">
                     <div class="team-img">
-                        <img src="img/profile_image/team_5.png" alt="Team Image">
+                        <img src="img/profile_image/team_6.png" alt="Team Image">
                         <div class="team-social">
                             <a class="social-fb" href="https://www.facebook.com/jahidul.Islam.Jony.60"><i class="fab fa-facebook-f"></i></a>
                             
@@ -142,7 +185,7 @@
             <div class="column5">
               <div class="team-2">
                   <div class="team-img">
-                      <img src="img/profile_image/team_7.png" alt="Team Image">
+                      <img src="img/profile_image/team_8.png" alt="Team Image">
                       <div class="team-social">
                         <a class="social-fb" href="https://www.facebook.com/profile.php?id=100009176638354&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
                         
@@ -159,7 +202,7 @@
           <div class="column5">
             <div class="team-2">
                 <div class="team-img">
-                    <img src="img/profile_image/avatar_2.png" alt="Team Image">
+                    <img src="img/profile_image/team_9.png" alt="Team Image">
                     <div class="team-social">
                         <a class="social-fb" href="https://www.facebook.com/profile.php?id=100089906314887&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
                         <a class="social-in" href="https://instagram.com/sumaiyasumu573?igshid=MzNlNGNkZWQ4Mg=="><i class="fab fa-instagram"></i></a>
@@ -169,7 +212,7 @@
                   <h2>Sumaiya Akter</h2>
                   <h3>UIU ID : 0112330062</h3>
                   <p>Phone : +8801627-601185</p>
-                  
+                  <h4>sakter2330062@bscse<br>.uiu.ac.bd</h4>
                 </div>
             </div>
         </div>
@@ -182,7 +225,7 @@
                 <div class="column5">
                     <div class="team-2">
                         <div class="team-img">
-                            <img src="img/profile_image/team_8.png" alt="Team Image">
+                            <img src="img/profile_image/team_10.png" alt="Team Image">
                             <div class="team-social">
                                 <a class="social-fb" href="https://www.facebook.com/jnshishir1"><i class="fab fa-facebook-f"></i></a>
                                 <a class="social-in" href="https://instagram.com/julkar_n_shishir?igshid=NGExMmI2YTkyZg=="><i class="fab fa-instagram"></i></a>
@@ -199,7 +242,7 @@
                 <div class="column5">
                     <div class="team-2">
                         <div class="team-img">
-                            <img src="img/profile_image/team_9.png" alt="Team Image">
+                            <img src="img/profile_image/team_11.png" alt="Team Image">
                             <div class="team-social">
                                 <a class="social-fb" href="https://www.facebook.com/diptadas626?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
                                 <a class="social-in" href="https://instagram.com/__its_me_dipto__?igshid=MzNlNGNkZWQ4Mg==/"><i class="fab fa-instagram"></i></a>
@@ -216,7 +259,7 @@
                 <div class="column5">
                   <div class="team-2">
                       <div class="team-img">
-                          <img src="img/profile_image/team_10.png" alt="Team Image">
+                          <img src="img/profile_image/team_12.png" alt="Team Image">
                           <div class="team-social">
                             <a class="social-fb" href="https://www.facebook.com/profile.php?id=100080331476091&mibextid=ZbWKwLL"><i class="fab fa-facebook-f"></i></a>
                             <a class="social-in" href="https://instagram.com/mostafizur_04?igshid=ZDc4ODBmNjlmNQ=="><i class="fab fa-instagram"></i></a>
@@ -233,7 +276,7 @@
               <div class="column5">
                 <div class="team-2">
                     <div class="team-img">
-                        <img src="img/profile_image/team_11.png" alt="Team Image">
+                        <img src="img/profile_image/team_20.png" alt="Team Image">
                         <div class="team-social">
                             <a class="social-fb" href="https://www.facebook.com/abrarhasan.sarid?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
                            
@@ -276,7 +319,7 @@
                     <div class="column5">
                         <div class="team-2">
                             <div class="team-img">
-                                <img src="img/profile_image/team_14.png" alt="Team Image">
+                                <img src="img/profile_image/team_15.png" alt="Team Image">
                                 <div class="team-social">
                                   <a class="social-fb" href="https://www.facebook.com/SheikhIstiak.Ahmed.44"><i class="fab fa-facebook-f"></i></a>
                                   
@@ -290,6 +333,40 @@
                             </div>
                         </div>
                     </div>
+                    <div class="column5">
+                        <div class="team-2">
+                            <div class="team-img">
+                                <img src="img/profile_image/team_16.png" alt="Team Image">
+                                <div class="team-social">
+                                  <a class="social-fb" href="https://www.facebook.com/ismail.arafat.754"><i class="fab fa-facebook-f"></i></a>
+                                  
+                                </div>
+                            </div>
+                            <div class="team-content">
+                                <h2>Ismail Arafat Siam  </h2>
+                                <h3>UIU ID :0112330031</h3>
+                                <p>Phone : +8801823-037048</p>
+                                <h4>isiam2330031@bscse<br>.uiu.ac.bd</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column5">
+                        <div class="team-2">
+                            <div class="team-img">
+                                <img src="img/profile_image/avatar_1.png" alt="Team Image">
+                                <div class="team-social">
+                                  <a class="social-fb" href="https://www.facebook.com/profile.php?id=100015807403533&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                                  
+                                </div>
+                            </div>
+                            <div class="team-content">
+                                <h2>Hamim Talha Mahi </h2>
+                                <h3>UIU ID :0112330014</h3>
+                                <p>Phone : +8801784-815363</p>
+                                <h4>hmahi2330014@bscse<br>.uiu.ac.bd</h4>
+                            </div>
+                        </div>
+                    </div>
                     
              
               
@@ -297,6 +374,262 @@
             </div>
             
             <!-- Team #2 End -->
+              <!-- Team #2 Start -->
+       <div class="container5">
+ 
+        <div class="row5">
+            <div class="column5">
+                <div class="team-2">
+                    <div class="team-img">
+                        <img src="img/profile_image/team_18.png" alt="Team Image">
+                        <div class="team-social">
+                            <a class="social-fb" href="https://www.facebook.com/profile.php?id=100015807403533&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                           
+                        </div>
+                    </div>
+                    <div class="team-content">
+                      <h2>Ishra Tabassum</h2>
+                      <h3>UIU ID : 0112330124</h3>
+                      <p>Phone : +8801872-754868</p>
+                      <h4>itabassum2330124@bscse<br>.uiu.ac.bd</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="column5">
+                <div class="team-2">
+                    <div class="team-img">
+                        <img src="img/profile_image/team_19.png" alt="Team Image">
+                        <div class="team-social">
+                            <a class="social-fb" href="https://www.facebook.com/amrin.akhi.77?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                            <a class="social-in" href="https://instagram.com/____akhuuu____?igshid=MzNlNGNkZWQ4Mg=="><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-content">
+                      <h2>Amrin Ferdousi Akhi </h2>
+                      <h3>UIU ID :01123202660</h3>
+                      <p>Phone : +8801952-658786</p>
+                      <h4>aferdousi2320266@bscse<br>.uiu.ac.bd</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="column5">
+              <div class="team-2">
+                  <div class="team-img">
+                      <img src="img/profile_image/team_21.png" alt="Team Image">
+                      <div class="team-social">
+                        <a class="social-fb" href="https://www.facebook.com/profile.php?id=100088255551502&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                        
+                    </div>
+                  </div>
+                  <div class="team-content">
+                    <h2>Tazim Hossain ohi</h2>
+                    <h3>UIU ID :0112330007</h3>
+                    <p>Phone : +8801999-487513</p>
+                    <h4>tohi2330007@bscse<br>.uiu.ac.bd</h4>
+                  </div>
+              </div>
+          </div>
+          <div class="column5">
+            <div class="team-2">
+                <div class="team-img">
+                    <img src="img/profile_image/avatar_2.png" alt="Team Image">
+                    <div class="team-social">
+                        <a class="social-fb" href="https://www.facebook.com/alienatedxx?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                       
+                    </div>
+                </div>
+                <div class="team-content">
+                  <h2>Sabrina Jahan Meem</h2>
+                  <h3>UIU ID :0112330220</h3>
+                  <p>Phone : +8801914-007815</p>
+                  <h4>smeem2330220@bscse<br>.uiu.ac.bd</h4>
+                </div>
+            </div>
+        </div>
+        </div> 
+    </div>
+                  <!-- Team #2 Start -->
+                  <div class="container5">
+ 
+                    <div class="row5">
+                        <div class="column5">
+                            <div class="team-2">
+                                <div class="team-img">
+                                    <img src="img/profile_image/team_24.png" alt="Team Image">
+                                    <div class="team-social">
+                                        <a class="social-fb" href="https://www.facebook.com/md.maharabhossain.96?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                                       
+                                    </div>
+                                </div>
+                                <div class="team-content">
+                                  <h2>MD. MAHARAB HOSSAIN OPU</h2>
+                                  <h3>UIU ID :0112330123</h3>
+                                  <p>Phone : +8801301-711303</p>
+                                  <h4>mopu2330123@bscse<br>.uiu.ac.bd</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column5">
+                            <div class="team-2">
+                                <div class="team-img">
+                                    <img src="img/profile_image/team_25.png" alt="Team Image">
+                                    <div class="team-social">
+                                        <a class="social-fb" href="https://www.facebook.com/nusrat.maria.311493?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                                     
+                                    </div>
+                                </div>
+                                <div class="team-content">
+                                  <h2>Israt Jahan Eva  </h2>
+                                  <h3>UIU ID :0112330088</h3>
+                                  <p>Phone : +8801690-263298</p>
+                                  <h4>ieva2330088@bscse<br>.uiu.ac.bd</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column5">
+                          <div class="team-2">
+                              <div class="team-img">
+                                  <img src="img/profile_image/team_26.png" alt="Team Image">
+                                  <div class="team-social">
+                                    <a class="social-fb" href="https://www.facebook.com/fardin.mustafi.3?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                                    
+                                </div>
+                              </div>
+                              <div class="team-content">
+                                <h2>Fardin Mustafi</h2>
+                                <h3>UIU ID :0112330111</h3>
+                                <p>Phone : +8801912-955535</p>
+                                <h4>fmustafi2330111@bscse<br>.uiu.ac.bd</h4>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="column5">
+                        <div class="team-2">
+                            <div class="team-img">
+                                <img src="img/profile_image/avatar_1.png" alt="Team Image">
+                                <div class="team-social">
+                                    <a class="social-fb" href="https://www.facebook.com/hassiburrahman.sun?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="social-in" href="https://instagram.com/sun_spiegel?igshid=MzNlNGNkZWQ4Mg=="><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-content">
+                              <h2>Hasibur Rahman Sun</h2>
+                              <h3>UIU ID :01123301990</h3>
+                              <p>Phone : +8801319-193780</p>
+                              <h4>hsun2330199@bscse<br>.uiu.ac.bd</h4>
+                            </div>
+                        </div>
+                    </div>
+                    </div> 
+                </div>
+                 
+            <!-- Team #2 End -->
+    <!-- Team #2 Start -->
+    <div class="container5">
+ 
+        <div class="row5">
+            <div class="column5">
+                <div class="team-2">
+                    <div class="team-img">
+                        <img src="img/profile_image/team_28.png" alt="Team Image">
+                        <div class="team-social">
+                            <a class="social-fb" href="https://www.facebook.com/eric.coulter.5494?mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+                           
+                        </div>
+                    </div>
+                    <div class="team-content">
+                      <h2>Shoumik Howlader Durjoy</h2>
+                      <h3>UIU ID :0112330021</h3>
+                      <p>Phone : +8801703822233</p>
+                      <h4>sdurjoy2330021@bscse<br>.uiu.ac.bd</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="column5">
+                <div class="team-2">
+                    <div class="team-img">
+                        <img src="img/profile_image/team_29.png" alt="Team Image">
+                        <div class="team-social">
+                            <a class="social-fb" href="https://www.facebook.com/rudro.hossan.7?mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+                            <a class="social-in" href="https://instagram.com/_a_s_rudro_?igshid=NGExMmI2YTkyZg=="><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-content">
+                      <h2>Ajmaien Sharear Rudro  </h2>
+                      <h3>UIU ID :0112330129</h3>
+                      <p>Phone : +8801810-674756</p>
+                      <h4>ahossain2330129@bscse<br>.uiu.ac.bd</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="column5">
+              <div class="team-2">
+                  <div class="team-img">
+                      <img src="img/profile_image/team_30.png" alt="Team Image">
+                      <div class="team-social">
+                        <a class="social-fb" href="https://www.facebook.com/fairozefatema24"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-in" href="https://instagram.com/_fairoze_fatema_?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </div>
+                  <div class="team-content">
+                    <h2>Fairoze Fatema Alam</h2>
+                    <h3>UIU ID :0112330162</h3>
+                    <p>Phone : +8801911-956279</p>
+                    <h4>falam2330162@bscse<br>.uiu.ac.bd</h4>
+                  </div>
+              </div>
+          </div>
+          <div class="column5">
+            <div class="team-2">
+                <div class="team-img">
+                    <img src="img/profile_image/team_32.png" alt="Team Image">
+                    <div class="team-social">
+                        <a class="social-fb" href="https://www.facebook.com/jonayed.hasan.507027?mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-in" href="https://instagram.com/hudai.1724?igshid=MmIzYWVlNDQ5Yg=="><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="team-content">
+                  <h2>Jonayed Hasan </h2>
+                  <h3>UIU ID :0112330055</h3>
+                  <p>Phone : +8801648-598111</p>
+                 
+                </div>
+            </div>
+        </div>
+        </div> 
+    </div>
+     
+<!-- Team #2 End -->
+  <!-- Team #2 Start -->
+  <div class="container5">
+ 
+    <div class="row5">
+        <div class="column5">
+            <div class="team-2">
+                <div class="team-img">
+                    <img src="img/profile_image/avatar_2.png" alt="Team Image">
+                    <div class="team-social">
+                        <a class="social-fb" href="https://www.facebook.com/profile.php?id=100081634040984"><i class="fab fa-facebook-f"></i></a>
+                       
+                    </div>
+                </div>
+                <div class="team-content">
+                  <h2>Fariha Noor</h2>
+                  <h3>UIU ID :01123301601</h3>
+                  <p>Phone : +8801876-861581</p>
+                  <h4>fnoor2330160@bscse<br>.uiu.ac.bd</h4>
+                </div>
+            </div>
+        </div>
+     
+
+      
+    </div>
+    </div> 
+</div>
+ 
+<!-- Team #2 End -->
+
       <footer class="bg-gray-800 text-white py-8">
         <div class="container mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -351,6 +684,12 @@
           </div>
         </div>
       </footer>
+      <script>
+        // JavaScript to toggle mobile menu visibility
+        document.getElementById('mobileMenuButton').addEventListener('click', function() {
+          document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+      </script>
       
 </body>
 </html>
