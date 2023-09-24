@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-M0ncu1AEtF/NwFkLBtZ/40v2NF/cD3Ad8T2y/WpsLX7R3cA66k5ysFxlG0r6M2MY9wt3QVUh/dOe0ATRNp5pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="css/team_style.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+        <style>
+/* Reset default margin and padding */
+body, h2, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+h2 {
+    color: #e74c3c;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Style the table container */
+.table-container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Style the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Style table rows */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style table cells */
+td, th {
+    border: none;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Style links within table cells */
+td a {
+    text-decoration: none;
+    color: #3498db;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Style Font Awesome PDF icons */
+td a i {
+    font-size: 1.5rem;
+    color: #3498db;
+}
+
+/* Style hover effect on table cells */
+td:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Style hover effect on links */
+td a:hover {
+    color: #e74c3c;
+    transition: color 0.2s ease-in-out;
+}
+
+        </style>
+  </style>
+</head>
+<body>
+<!-- Navbar -->
+  <nav class="bg-gray-800 text-white">
+    <div class="container mx-auto px-4 py-6">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="/" class="text-xl font-bold">
+          UIU CSE FALL 23
+        </a>
+
+        <!-- Mobile menu button -->
+        <div class="lg:hidden">
+          <button class="text-white focus:outline-none" id="mobileMenuButton">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Desktop menu -->
+        <ul class="hidden lg:flex space-x-4">
+          <li>
+            <a href="#" class="text-white">Home</a>
+          </li>
+          <li>
+            <a href="#" class="text-white">Shuttle Service</a>
+          </li>
+          <li>
+            <a href="#" class="text-white">Services</a>
+          </li>
+          <li>
+            <a href="contact.html" class="text-white">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mobile menu (hidden by default on larger screens) -->
+      <div class="hidden lg:hidden" id="mobileMenu">
+        <ul class="mt-4 space-y-4">
+          <li>
+            <a href="#" class="block text-white">Home</a>
+          </li>
+          <li>
+            <a href="#" class="block text-white">About</a>
+          </li>
+          <li>
+            <a href="#" class="block text-white">Services</a>
+          </li>
+          <li>
+            <a href="#" class="block text-white">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div>
+    <h2 style="color: red; text-align: center;">Time Schedule of Shuttle Service</h2>
+  </div>
+  <table>
+    <tr>
+        <td><b>From Notun Bazer</b></td>
+        <td><b>From UIU</b></td>
+    </tr>
+    <tr>
+      <td>7.30 AM - 8.45 AM </td>
+      <td>10.05 AM</td>
+   </tr>
+   <tr>
+    <td>9.25 AM - 9.35 AM </td>
+    <td>11.25 AM</td>
+  </tr>
+  <tr>
+    <td>10.45 AM - 10.55 AM </td>
+    <td>12.45 PM</td>
+  </tr>
+  <tr>
+    <td>12.05 PM - 12.15 PM </td>
+    <td>02.05 PM</td>
+  </tr>
+  <tr>
+    <td>1.25 PM - 1.35 PM </td>
+    <td>03.25 PM</td>
+ </tr>
+ <tr>
+  <td>2.45 PM - 2.55 APM </td>
+  <td>04.40 PM</td>
+</tr>
+
+
+  </table>
+
+
+      <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Footer Logo and Description -->
+            <div class="col-span-1 px-8">
+              <div class="flex items-center mb-4">
+                <img src="img/logo.svg" alt="Logo" class="w-12 mr-2">
+                <h5 class="text-lg font-bold">UIU CSE Fall 23</h5>
+              </div>
+              <p class="text-sm">
+                United City, Madani Avenue,  Badda, Dhaka 1212, Bangladesh. 
+              </p>
+            </div>
+      
+            <!-- Quick Links Set 1 -->
+            <div class="col-span-1 px-8">
+              <h6 class="font-bold mb-4">Quick Links</h6>
+              <ul>
+                <li><a href="#home" class="hover:text-gray-300">Home</a></li>
+                <li><a href="#about" class="hover:text-gray-300">About</a></li>
+                <li><a href="#programs" class="hover:text-gray-300">Programs</a></li>
+                <li><a href="#admissions" class="hover:text-gray-300">Admissions</a></li>
+              </ul>
+            </div>
+      
+            <!-- Quick Links Set 2 -->
+            <div class="col-span-1 px-8">
+              <h6 class="font-bold mb-4">More Links</h6>
+              <ul>
+                <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+                <li><a href="#events" class="hover:text-gray-300">Events</a></li>
+                <li><a href="#blog" class="hover:text-gray-300">Blog</a></li>
+                <li><a href="#gallery" class="hover:text-gray-300">Gallery</a></li>
+              </ul>
+            </div>
+      
+            <!-- Quick Links Set 3 -->
+            <div class="col-span-1 px-8">
+              <h6 class="font-bold mb-4">Useful Links</h6>
+              <ul>
+                <li><a href="#services" class="hover:text-gray-300">Services</a></li>
+                <li><a href="#faq" class="hover:text-gray-300">FAQ</a></li>
+                <li><a href="#support" class="hover:text-gray-300">Support</a></li>
+                <li><a href="#privacy" class="hover:text-gray-300">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-8 text-sm text-center px-8">
+            Developed & Maintained by UIU CSE Fall 23
+            <br>
+            &copy; 1993-2023 UIU CSE Fall 23. All rights reserved.
+          </div>
+        </div>
+      </footer>
+      <script>
+        // JavaScript to toggle mobile menu visibility
+        document.getElementById('mobileMenuButton').addEventListener('click', function() {
+          document.getElementById('mobileMenu').classList.toggle('hidden');
+        });
+      </script>
+      
+</body>
+</html>
